@@ -2,6 +2,12 @@ section.repository-list {
   margin: 40px;
   h1 {
     margin-bottom: 16px;
+    display: inline-block;
+    color: #8257e6;
+    border-bottom: 2px solid #8257e6;
+  }
+
+  img {
   }
 
   ul {
@@ -12,16 +18,25 @@ section.repository-list {
         margin-top: 20px;
       }
 
+      strong {
+        color: #8257e6;
+      }
+
       p {
         font-size: 14px;
-        color: #444;
+        color: #fff;
         margin-top: 8px;
       }
 
-      a {
+      a:link,
+      a:visited {
         display: inline-block;
         margin-top: 16px;
         text-decoration: none;
+        color: #c1a9f8;
+      }
+
+      a:hover {
         color: #8257e6;
       }
     }
