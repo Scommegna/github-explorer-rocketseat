@@ -1,3 +1,4 @@
+// Inteface type for the properties that repository item receive
 interface RepositoryItemProps {
   repository: {
     name: string;

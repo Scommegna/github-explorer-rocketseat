@@ -2,6 +2,7 @@ import { RepositoryItem } from "./RepositoryItem";
 import "../styles/repositories.scss";
 import { useState, useEffect } from "react";
 
+// Interface types for repository state
 interface Repository {
   name: string;
   description: string;
@@ -9,8 +10,10 @@ interface Repository {
 }
 
 export function RepositoryList() {
+  // Initial repository state
   const [repositories, setRepositories] = useState<Repository[]>([]);
 
+  // API call
   useEffect(() => {
     fetch("https://api.github.com/orgs/rocketseat/repos")
       .then((response) => response.json())
